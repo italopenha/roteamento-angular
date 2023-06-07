@@ -4,8 +4,9 @@ import { PrimeiraPaginaComponent } from './primeira-pagina/primeira-pagina.compo
 import { SegundaPaginaComponent } from './segunda-pagina/segunda-pagina.component';
 
 const routes: Routes = [
-  { path: 'primeira-pagina', component: PrimeiraPaginaComponent},
-  { path: 'segunda-pagina', component: SegundaPaginaComponent}
+  { path: 'primeira-pagina', component: PrimeiraPaginaComponent },
+  { path: 'segunda-pagina', component: SegundaPaginaComponent },
+  { path: '', redirectTo: 'primeira-pagina', pathMatch: 'full' }
 ]
 
 @NgModule({
